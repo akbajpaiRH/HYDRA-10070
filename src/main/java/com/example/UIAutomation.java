@@ -88,11 +88,12 @@ public class UIAutomation {
         page1.frameLocator("#frame-one748593425").getByLabel("Email address *").fill("tester@gmail.com");
         page1.frameLocator("#frame-one748593425")
                 .getByRole(AriaRole.BUTTON, new FrameLocator.GetByRoleOptions().setName("Submit")).click();
-        Thread.sleep(1000);
+        Thread.sleep(700);
         page1.close();
-        Thread.sleep(1000);
+        Thread.sleep(700);
         page.close();
-        Thread.sleep(2000);
+        Thread.sleep(700);
         p1.close();
+        System.exit(0);
     }
 }
