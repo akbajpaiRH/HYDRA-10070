@@ -7,6 +7,9 @@ import com.microsoft.playwright.options.AriaRole;
 public class UIAutomation {
     public static void main(String[] args) throws InterruptedException {
         Playwright playwright = Playwright.create();
+        // LaunchOptions lp =new LaunchOptions();
+        // lp.setChannel("chrome");
+        // lp.setHeadless(false);
         Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
 
         BrowserContext bcx1 = browser.newContext();
